@@ -1,0 +1,17 @@
+{
+  "name": "cc3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Gregg <greggthedev@gmail.com> (https://github.com/GreggtheDev/)",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7"
+  }
+}
