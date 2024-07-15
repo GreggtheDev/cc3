@@ -1,8 +1,8 @@
 {
   "name": "cc3",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "Currency Converter",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,7 +11,9 @@
   "author": "Gregg <greggthedev@gmail.com> (https://github.com/GreggtheDev/)",
   "license": "ISC",
   "dependencies": {
-    "sequelize": "^6.37.3",
-    "sqlite3": "^5.1.7"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.0"
   }
 }
