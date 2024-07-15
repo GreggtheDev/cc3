@@ -4,21 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Currency Converter</h1>
-    <div class="converter">
-      <label for="base-currency">Base Currency:</label>
-      <select id="base-currency"></select>
-      <label for="amount">Amount:</label>
-      <input type="number" id="amount" value="1" min="0" />
-      <label for="target-currency">Target Currency:</label>
-      <select id="target-currency"></select>
-      <p>Converted Amount: <span id="converted-amount"></span></p>
-      <button id="historical-rates">View Historical Rates</button>
-      <div id="historical-rates-container"></div>
-      <button id="save-favorite">Save Favorite</button>
-      <div id="favorite-currency-pairs"></div>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <div class="converter">
+        <label for="baseCurrency">Base Currency:</label>
+        <select id="baseCurrency">
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CHF">CHF - Swiss Franc</option>
+          <option value="CNY">CNY - Chinese Yuan</option>
+          <option value="SEK">SEK - Swedish Krona</option>
+          <option value="NZD">NZD - New Zealand Dollar</option>
+          <!-- Add more currency options as needed -->
+        </select>
+
+        <label for="targetCurrency">Target Currency:</label>
+        <select id="targetCurrency">
+          <option value="USD">USD - US Dollar</option>
+          <option value="EUR">EUR - Euro</option>
+          <option value="GBP">GBP - British Pound</option>
+          <option value="JPY">JPY - Japanese Yen</option>
+          <option value="CAD">CAD - Canadian Dollar</option>
+          <option value="AUD">AUD - Australian Dollar</option>
+          <option value="CHF">CHF - Swiss Franc</option>
+          <option value="CNY">CNY - Chinese Yuan</option>
+          <option value="SEK">SEK - Swedish Krona</option>
+          <option value="NZD">NZD - New Zealand Dollar</option>
+          <!-- Add more currency options as needed -->
+        </select>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter amount" />
+        <button id="convertBtn">Convert</button>
+        <p id="convertedAmount"></p>
+        <button id="historyBtn">Get Historical Rates</button>
+        <p id="historicalRate"></p>
+        <button id="saveFavoriteBtn">Save Favorite Pair</button>
+        <ul id="favoritesList"></ul>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
